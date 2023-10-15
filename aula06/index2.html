@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro codigo</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 255, 0.507);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        label{
+            color: blue;
+        }
+        fieldset{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ola mundo!</h1>
+    <p>Ja me livrei da maldição</p>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        
+        
+        <fieldset>
+            <div>
+                <legend>cadastro</legend>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" minlength="8" autocomplete="name" placeholder="Seu nome">
+            </div>
+
+            <div>
+                    <label for="iest">Estado:</label>
+                  <select name="estado" id="iest" required>
+                     <option value="esco">--escolha um estado--</option>
+           
+                  <optgroup label="Sudeste">
+                    <option value="rj">Rio de janeiro</option>
+                   <option value="mg">Minas Gerais</option>
+                  <option value="sp">São Paulo</option>
+                 </optgroup>
+
+                <optgroup label="Sul">
+                  <option value="SC">Santa Catarina</option>
+                  <option value="ES">Espirito Santo</option>
+                  <option value="AC">Acre</option>
+               </optgroup>
+            
+        </select>
+            </div>
+
+
+        </fieldset>
+
+        
+    </form>
+
+
+    <script>
+        var n1 = Number(prompt ('Digite um numero'))
+        var n2 = Number(prompt ('Digite outro numero'))
+        var soma = n1 + n2
+        alert (`A soma entre ${n1} + ${n2} e iqual a ${soma}` )
+    </script>
+    
+</body>
+</html>
